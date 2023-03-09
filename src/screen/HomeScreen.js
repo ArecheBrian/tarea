@@ -1,6 +1,9 @@
 import { Box, Button, Center, Image, VStack } from "native-base"
+import { useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
 import { Imagenes } from "../assets/img"
 import { Tabs } from "../components/Tabs"
+import { fetchEdadPeople } from "../Redux/Features/edadPeopleSlice"
 
 export const HomeScreen = () => {
     return (
