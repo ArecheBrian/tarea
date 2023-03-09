@@ -6,7 +6,6 @@ export const fetchEdadPeople = createAsyncThunk(
    async ()=> {
         try{
             const response = await axios.get("https://api.agify.io/?name=meelad")
-            console.log(response.data)
             if(response.status === 200) return response.data
         } catch(err){
             console.log(err.message)

@@ -1,9 +1,8 @@
-import { Box, Heading, Input, IconButton, HStack } from "native-base"
+import { Box, Heading, Input, IconButton, HStack, VStack } from "native-base"
 import { FontAwesome } from '@expo/vector-icons';
 import { useState } from "react";
 
 export const GenderCard = ()=> {
-    const [name, setName]= useState("")
     return (
         <Box h={24} bg={"blueGray.50"} borderRadius={20} p={4}>
             <Heading size={"sm"}>Coloca el Nombre</Heading>
@@ -51,3 +50,16 @@ export const UniCard = ()=> {
     )
 }
 
+export const UniversidadCard = ({name, link}) => {
+    return (
+        <VStack h="32" w={"full"} bg={"white"} shadow={5} borderRadius={15} p={5} space={9}>
+            <HStack w={"full"} justifyContent={"space-between"}>
+                <Heading size={"sm"}>{name}</Heading>
+            </HStack>
+            <HStack w={"full"} justifyContent={"space-between"}>
+                <Heading size={"sm"}>Link: </Heading>
+                <Heading size={"sm"} color={"blue.600"}>{link}</Heading>
+            </HStack>
+        </VStack>
+    )
+}

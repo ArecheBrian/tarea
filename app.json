@@ -18,15 +18,19 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.appHeraminetas",
-      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.areche.tarea6"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f4cd0d43-f23f-4c8e-9842-7374988a3d6a"
+      }
     }
   }
 }
